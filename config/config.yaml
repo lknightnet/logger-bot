@@ -1,0 +1,6 @@
+app:
+  name: "logger-bot"
+tg:
+  token: "5944731024:AAGCikQUMGDzBsN3ZvjD4AYPOStYXaFjA80"
+api:
+  url: "http://localhost:8000/log"
