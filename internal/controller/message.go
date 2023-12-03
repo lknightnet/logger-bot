@@ -28,10 +28,10 @@ func (mc *messageController) logs(ctx context.Context, b *bot.Bot, update *model
 		log.Println(err)
 	}
 	for _, value := range msgs {
+
 		b.SendMessage(ctx, &bot.SendMessageParams{
-			ChatID:    update.Message.Chat.ID,
-			Text:      value.String(),
-			ParseMode: models.ParseModeMarkdown,
+			ChatID: update.Message.Chat.ID,
+			Text:   value.String(),
 		})
 	}
 }
